@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(LexicalOrder(100))
+	fmt.Println(FindKthNumber(596516650, 593124772))
 }
