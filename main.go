@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(FindKthNumber(596516650, 593124772))
+	fmt.Println(ThirdMax([]int{1, 2, 2}))
 }
