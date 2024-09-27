@@ -3,27 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	/**
-	 	[
-			"MyLinkedList",[],
-			"addAtHead",[1],
-			"addAtTail",[3],
-			"addAtIndex",[1,2],
-			"get",[1],
-			"deleteAtIndex",[0],
-			"get",[0],
+	node1 := &ListNode{1, nil}
+	node2 := &ListNode{2, nil}
+	node3 := &ListNode{3, nil}
+	node4 := &ListNode{4, nil}
 
-			"addAtHead",[1],
-			"addAtIndex",[3,0],
-			"addAtHead",[6],
-			"addAtTail",[4],
-			"addAtHead",[4],
-			"addAtIndex",[5,0],
-			"addAtHead"[6],
-		]
-	*/
+	node1.Next = node2
+	node2.Next = node3
+	node3.Next = node4
+	node4.Next = node1
 
-	obj := Constructor()
-	obj.AddAtTail(1)
-	fmt.Println(obj.Get(0))
+	fmt.Println(HasCycle(node1))
 }
