@@ -13,5 +13,5 @@ func main() {
 	node3.Next = node4
 	node4.Next = node1
 
-	fmt.Println(HasCycle(node1))
+	fmt.Println(DetectCycle(node1))
 }
