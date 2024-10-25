@@ -7,11 +7,12 @@ func main() {
 	node2 := &ListNode{2, nil}
 	node3 := &ListNode{3, nil}
 	node4 := &ListNode{4, nil}
+	node5 := &ListNode{5, nil}
 
 	node1.Next = node2
 	node2.Next = node3
 	node3.Next = node4
-	node4.Next = node1
+	node4.Next = node5
 
-	fmt.Println(DetectCycle(node1))
+	fmt.Println(RemoveNthFromEnd(node1, 2))
 }
